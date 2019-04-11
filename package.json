@@ -17,6 +17,7 @@
     "request": "^2.88.0"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.8.1"
+    "@fortawesome/fontawesome-free": "^5.8.1",
+    "nodemon": "^1.2.0"
   }
 }
