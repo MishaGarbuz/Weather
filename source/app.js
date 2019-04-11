@@ -24,7 +24,7 @@ app.use(express.static(publicDirectoryPath))
 
 app.get('', (req,res) => {
     res.render('index', {
-        title: 'Online Movie Store',
+        title: 'Weather App',
         name: 'Michael'
     })
 })
@@ -44,17 +44,6 @@ app.get('/help', (req,res) => {
     })
 })
 
-app.get('/products', (req,res) => {
-    if (!req.query.search) {
-        return res.send({
-            error: 'You must provide a search term'
-        })
-    } 
-    console.log(req.query)
-    res.send({
-        products: req.query
-    })
-})
 
 app.get('/weather',(req,res) => {
     if (!req.query.address) {
